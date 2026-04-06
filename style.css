@@ -1,199 +1,79 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-body {
-    background-color: black;
+.header {
+    padding: 20px 0;
 }
-.ee {
+
+.header .container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+.hero {
     position: relative;
+    padding: 150px 0;
+    text-align: center;
+    color: white;
 }
-.qq {
-    color: #ffffff;
-    font-size: 24px;
-    font-family: 'Chillax';
-    font-weight: 500px;
-    line-height: 100%;
-    letter-spacing: 0%;
+.hero::before {
+    content: "";
     position: absolute;
-    width: 117px;
-    height: 34px;
-    top: 48px;
-    left: 196px;
+    inset: 0;
+
+    background: url("Looper\ BG.png") center/cover no-repeat;
+    z-index: -1;
 }
-.qqq {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-family: Clash Grotesk;
-    font-weight: 400px;
-    letter-spacing: 0%;
-    line-height: 100%;
-    position: absolute;
-    width: 130px;
-    height: 22px;
-    top: 54px;
-    left: 567px;
+.hero-title {
+    font-size: 80px;
+    line-height: 1.1;
 }
-.ww {
-    color: #FFFFFF;
-    position: absolute;
-    width: 67px;
-    height: 22px;
-    top: 54px;
-    left: 737px;
-    font-size: 18px;
-    font-family: Clash Grotesk;
-    line-height: 100%;
-    letter-spacing: 0%;
-    width: 400px;
-}
-.www {
-    color: #FFFFFF;
-    position: absolute;
-    width: 71px;
-    height: 22px;
-    top: 54px;
-    left: 844px;
-    font-size: 18px;
-    font-family: Clash Grotesk;
-    line-height: 100%;
-    letter-spacing: 0%;
-    width: 400px;
-}
-.rr {
-    color: #FFFFFF;
-    position: absolute;
-    width: 74px;
-    height: 22px;
-    top: 54px;
-    left: 955px;
-    font-size: 18px;
-    font-family: Clash Grotesk;
-    line-height: 100%;
-    letter-spacing: 0%;
-    width: 400px;
-}
-.rrr {
-    color: #FFFFFF;
-    position: absolute;
-    width: 92px;
-    height: 22px;
-    top: 54px;
-    left: 1069px;
-    font-size: 18px;
-    font-family: Clash Grotesk;
-    width: 400px;
-    line-height: 100%;
-    letter-spacing: 0%;
-}
-.ff {
+
+.hero-title span {
     background: linear-gradient(to right,#FF1Cff, #00F0FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    position: absolute;
-    width: 669px;
-    height: 98px;
-    top: 263px;
-    left: 529px;
-    font-family: Clash Grotesk;
-    font-size: 80px;
-    line-height: 100%;
-    letter-spacing: 2%;
 }
-.dd {
-    display: flex;
-    position: relative;
-}
-.bb {
-    display: flex;
-    position: relative;
-}
-.bbb {
-    color: #FFFFFF;
-    position: absolute;
-    width: 417px;
-    height: 98px;
-    top: 357px;
-    left: 655px;
-    font-size: 80px;
-    font-family: Clash Grotesk;
-    line-height: 100%;
-    letter-spacing: 2%;
-}
-.zz {
-    position: relative;
-    display: flex;
-}
-.zzz {
-    color: #FFFFFF;
-    position: absolute;
-    width: 723px;
-    height: 99px;
-    top: 473px;
-    left: 502px;
+.hero-text {
+    max-width: 700px;
+    margin: 20px auto;
     font-size: 20px;
-    font-family: Cabinet Grotesk;
-    line-height: 33px;
-    letter-spacing: 0.72px;
+    line-height: 1.5;
 }
-.ccc {
-    width: 112px;
-    height: 26px;
-    font-family: Space Grotesk;
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    text-align: center;
-    color: #FFFFFF;
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-.cc {
-    display: inline-block;
-    min-width: 176px;
-    height: 70px;
-    top: 604px;
-    left: 679px;
-    border-radius: 8px;
-    padding: 22px 32px 22px 32px;
-    background: linear-gradient(to bottom, #497CFF, #001664);
-    border: 1px solid;
-    position: absolute;
-}
-.vvv {
-    width: 118px;
-    height: 26px;
-    color: #000000;
-    font-size: 20px;
-    font-family: Space Grotesk;
-    line-height: 100%;
-    letter-spacing: 0px;
-    text-align: center;
-}
-.vv {
-    position: absolute;
-    display: inline-block;
-    min-width: 182px;
-    height: 70px;
-    top: 604px;
-    left: 867px;
-    padding: 22px 32px 22px 32px;
-    border-radius: 8px;
-    border: 1px solid;
-    background:  linear-gradient(to bottom, #D1D3E2, #75629D);
-}
-.oo {
-    background: url(Looper\ BG.png);
-    width: 1900.73px;
-    height: 1000.13px;
-    top: -41px;
-    left: -269px;
-    border-radius: 25px;
-    border: 4px;
-    background-size: cover;
-}
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
 
+.btn-primary {
+    padding: 20px 30px;
+    background: linear-gradient(to bottom, #497CFF, #001664);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    padding: 20px 30px;
+    background: linear-gradient(to bottom, #D1D3E2, #75629D);
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+}
 body {
-  font-family: "Space Grotesk", sans-serif;
+    background: black;
 }
